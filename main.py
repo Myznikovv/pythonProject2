@@ -11,7 +11,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    await bot.send_message(message.from_user.id, "Hello, This your bot " + str(message.from_user.first_name))
+    await bot.send_message(message.from_user.id, "Hello"+ str(message.from_user.first_name)+ "!This your bot " )
 
 
 @dp.message_handler()
